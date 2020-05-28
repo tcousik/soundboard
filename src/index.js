@@ -1,17 +1,43 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import Abby from "./components/abby.js";
+import Emma from "./components/emma.js";
+import Tejas from "./components/tejas.js";
+import { BrowserRouter, Route, Switch, Link } from "react-router-dom";
+import "./index.css";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+export default function SoundBoard() {
+  return (
+    <div>
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/" render={() => <div>{Home()}</div>} />
+          <Route exact path="/abby" component={Abby} />
+          <Route exact path="/emma" component={Emma} />
+          <Route exact path="/tejas" component={Tejas} />
+        </Switch>
+      </BrowserRouter>
+    </div>
+  );
+}
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+const Home = () => {
+  return (
+    <div>
+      <h1 className="App">SOUNDBOARD MAIN PAGE</h1>
+      <div className="buttonArea">
+        <Link className="button" to="/abby">
+          Abby
+        </Link>
+        <Link className="button" to="/emma">
+          Emma
+        </Link>
+        <Link className="button" to="/tejas">
+          Tejas
+        </Link>
+      </div>
+    </div>
+  );
+};
+
+ReactDOM.render(<SoundBoard />, document.getElementById("root"));
