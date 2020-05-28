@@ -56,7 +56,7 @@ export default class TejasBoard extends React.Component {
         id: 7,
         mood: "Family",
         soundURL:
-          "https://dl.dropboxusercontent.com/s/q6l84x6vqf4lrzr/7%20tej%20notice.mp3?dl=0",
+          "https://dl.dropboxusercontent.com/s/w84ixq1zjbusmt8/9%20tej%20who.mp3?dl=0",
         imageURL: "https://i.imgur.com/E75oI2P.jpg",
         isPlaying: false,
       },
@@ -64,7 +64,7 @@ export default class TejasBoard extends React.Component {
         id: 8,
         mood: "Lazer",
         soundURL:
-          "https://dl.dropboxusercontent.com/s/1qqf72pp2ipazye/8%20tej%20stfu.mp3?dl=0",
+          "https://dl.dropboxusercontent.com/s/q6l84x6vqf4lrzr/7%20tej%20notice.mp3?dl=0",
         imageURL: "https://i.imgur.com/E75oI2P.jpg",
         isPlaying: false,
       },
@@ -72,7 +72,7 @@ export default class TejasBoard extends React.Component {
         id: 9,
         mood: "About Staying",
         soundURL:
-          "https://dl.dropboxusercontent.com/s/w84ixq1zjbusmt8/9%20tej%20who.mp3?dl=0",
+          "https://dl.dropboxusercontent.com/s/1qqf72pp2ipazye/8%20tej%20stfu.mp3?dl=0",
         imageURL: "https://i.imgur.com/E75oI2P.jpg",
         isPlaying: false,
       },

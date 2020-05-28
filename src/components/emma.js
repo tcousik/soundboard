@@ -16,7 +16,7 @@ export default class EmmaBoard extends React.Component {
         id: 2,
         mood: "Munchdew",
         soundURL:
-          "https://dl.dropboxusercontent.com/s/pe97jde3xczwa36/2%20emma%20ya.mp3?dl=0",
+          "https://dl.dropboxusercontent.com/s/8cmnrv1bt4k4713/4%20emma%20shot.mp3?dl=0",
         imageURL: "https://i.imgur.com/64BtOrl.jpg",
         isPlaying: false,
       },
@@ -24,7 +24,7 @@ export default class EmmaBoard extends React.Component {
         id: 3,
         mood: "Uhh Oops",
         soundURL:
-          "https://dl.dropboxusercontent.com/s/2qyg6bc9ibe1qow/3%20emma%20stop.mp3?dl=0",
+          "https://dl.dropboxusercontent.com/s/pe97jde3xczwa36/2%20emma%20ya.mp3?dl=0",
         imageURL: "https://i.imgur.com/64BtOrl.jpg",
         isPlaying: false,
       },
@@ -32,7 +32,7 @@ export default class EmmaBoard extends React.Component {
         id: 4,
         mood: "Hufflepuff",
         soundURL:
-          "https://dl.dropboxusercontent.com/s/8cmnrv1bt4k4713/4%20emma%20shot.mp3?dl=0",
+          "https://dl.dropboxusercontent.com/s/2qyg6bc9ibe1qow/3%20emma%20stop.mp3?dl=0",
         imageURL: "https://i.imgur.com/64BtOrl.jpg",
         isPlaying: false,
       },
