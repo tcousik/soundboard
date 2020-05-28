@@ -4,22 +4,20 @@ export default class Board extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      audio: {
-        sound: null,
-      },
+      sound: null,
     };
   }
 
-  playSound(id) {
+  playSound = (id) => {
     let sound = this.props.sounds.find((sound) => {
       return sound.id === id;
     });
     let currentSound = new Audio(sound.soundURL);
     this.setState({
-      audio: { sound: currentSound },
+      sound: currentSound,
     });
     currentSound.play();
-  }
+  };
 
   renderSounds() {
     return this.props.sounds.map((sound) => {
@@ -28,7 +26,6 @@ export default class Board extends React.Component {
           <PicWithSound
             key={sound.id}
             sound={sound}
-            audio={this.state.audio}
             playSound={this.playSound.bind(this)}
           />
         </div>
